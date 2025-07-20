@@ -1,0 +1,54 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+#controls, #sort-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+#playlist {
+  margin-top: 20px;
+}
+.song {
+  background: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.song:hover {
+  background: #e9ecef;
+}
+.current {
+  background: #d1e7dd !important;
+  font-weight: bold;
+}
+button, select {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover, select:hover {
+  background: #0056b3;
+}
+input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

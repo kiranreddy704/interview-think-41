@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MVG Playlist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎵 MVG Playlist</h1>
+
+  <div id="controls">
+    <input type="text" id="songInput" placeholder="Enter song name">
+    <button onclick="addSong()">Add Song</button>
+  </div>
+
+  <div id="sort-controls">
+    <button onclick="previousSong()">⏮ Previous</button>
+    <button onclick="nextSong()">⏭ Next</button>
+    <select id="sortOptions" onchange="sortPlaylist()">
+      <option value="none">Sort: None</option>
+      <option value="nameAsc">A-Z</option>
+      <option value="nameDesc">Z-A</option>
+    </select>
+  </div>
+
+  <div id="playlist"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
